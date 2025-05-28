@@ -3,7 +3,7 @@
 client_id = "cf5221cedf828226ccb92bfc3cce9c5f"
 name = "theraven-bulk-order-editor"
 handle = "theraven-bulk-order-editor"
-application_url = "https://example.com/"
+application_url = "https://theraven-boe.ravenci.solutions"
 embedded = true
 
 [build]
@@ -25,7 +25,7 @@ api_version = "2025-04"
 scopes = "read_orders,write_orders,write_products"
 
 [auth]
-redirect_urls = [ "https://example.com/api/auth" ]
+redirect_urls = [ "https://theraven-boe.ravenci.solutions/auth/callback" ]
 
 [pos]
 embedded = false
