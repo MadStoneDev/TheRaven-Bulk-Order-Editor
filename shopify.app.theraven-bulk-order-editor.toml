@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "0637898f60f7c8bdc12372cbfda4c785"
+name = "TheRaven Bulk Order Editor"
+handle = "theraven-bulk-order-editor-2"
+application_url = "https://knives-lap-tommy-maker.trycloudflare.com"
+embedded = true
+
+[build]
+include_config_on_deploy = true
+
+[webhooks]
+api_version = "2025-04"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_orders,write_orders,write_products"
+
+[auth]
+redirect_urls = [
+  "https://knives-lap-tommy-maker.trycloudflare.com/auth/callback",
+  "https://knives-lap-tommy-maker.trycloudflare.com/auth/shopify/callback",
+  "https://knives-lap-tommy-maker.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
